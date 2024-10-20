@@ -20,7 +20,7 @@ complex_query = """
 """
 
 
-def query():
+def query(a_query):
     load_dotenv()
     server_h = os.getenv("SERVER_HOSTNAME")
     access_token = os.getenv("ACCESS_TOKEN")
@@ -31,7 +31,7 @@ def query():
         access_token=access_token,
     ) as connection:
         c = connection.cursor()
-        c.execute(complex_query)
+        c.execute(a_query)
         result = c.fetchall()
         print("Query Output: \n")
         print(result)
