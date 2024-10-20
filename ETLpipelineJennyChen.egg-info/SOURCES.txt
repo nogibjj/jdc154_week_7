@@ -1,0 +1,8 @@
+README.md
+setup.py
+ETLpipelineJennyChen.egg-info/PKG-INFO
+ETLpipelineJennyChen.egg-info/SOURCES.txt
+ETLpipelineJennyChen.egg-info/dependency_links.txt
+ETLpipelineJennyChen.egg-info/entry_points.txt
+ETLpipelineJennyChen.egg-info/requires.txt
+ETLpipelineJennyChen.egg-info/top_level.txt

@@ -15,12 +15,13 @@ lint:
 	
 	#ruff check *.py mylib/*.py
 
-container-lint:
-	docker run --rm -i hadolint/hadolint < Dockerfile
+extract:
+	etl_query extract
 
-refactor: format lint
+transform_load: 
+	etl_query transform_load
 
-deploy:
-	#deploy goes here
+query:
+	etl_query query "WITH av_super AS (SELECT Position, AVG(Superstar) as average from jdc_draft_2015 GROUP BY Position) SELECT p.Player, p.NameID, p.Superstar, p.Position, a.average FROM jdc_draft_2015 p JOIN av_super a ON p.Position = a.Position WHERE Superstar > a.average ORDER BY Position, Superstar DESC"
 		
 all: install lint test format deploy
