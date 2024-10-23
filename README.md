@@ -1,19 +1,19 @@
 # Databricks Integration
 
-This project creates an ETL-Query pipeline utilizing a cloud service like Databricks, and performs CTE and aggregation operations to analyze the data. The ![dataset](https://github.com/fivethirtyeight/data/tree/master/nba-draft-2015) is imported as a csv and loaded into Databricks as jdc_draft_2015; it contains historical results of the NBA draft projection model, 2001-2015.
+This project creates an ETL-Query pipeline utilizing a cloud service like Databricks, and performs CTE and aggregation operations to analyze the data, all executable through the command line. The ![dataset](https://github.com/fivethirtyeight/data/tree/master/nba-draft-2015) is imported as a csv and loaded into Databricks as jdc_draft_2015; it contains historical results of the NBA draft projection model, 2001-2015.
 
 [![cicd](https://github.com/nogibjj/jdc154_week_7/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/jdc154_week_7/actions/workflows/hello.yml)
 
 ## Functionality and commands:
 * ETL - extracts data from url (extract.py), transforms data for analysis, and loads data into Databricks SQL Warehouse (transform_load.py). This is accomplished by establishing a database connection to Databricks.
 * Performs complex queries like joins and aggregation. (query.py)
-* Tests each operation
 * CI/CD pipeline (github actions including secrets and CLI) * *Note* My HTTP did not work as an env variable so it was directly pasted in to my code 
 * requirements.txt
 * Makefile with install, setup, format, lint, test, extract, transform_load, and query functionality
 * Dockerfile and devcontainer
 * main.py - script to run ETL and query, utilizes argparse to integrate command line interface to run ETL and query 
 * test_main.py - test script 
+* user_guide.md details how to use setup.py and setup the command line commands
 
 ## Visualization of Process:
 ![alt text](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week6/raw/main/adflow.svg)
