@@ -8,3 +8,4 @@ requests==2.28.0
 pandas
 databricks-sql-connector
 python-dotenv
+setuptools 
