@@ -2,10 +2,10 @@
 
 ## Overview
 
-The ETL-Query script is a command-line interface (CLI) tool that performs Extract, Transform, Load (ETL) operations and executes general queries. This guide provides instructions on how to use the script effectively.
+The ETL-Query script is a command line interface (CLI) tool that performs Extract, Transform, and Load (ETL) operations and also executes queries. Read this guide for instructions on how to set up and use the script.
 
-## Startup 
-To access the cli command tool you would need to run setup.py by typing:
+## Set up 
+To access the CLI tool, you need to run setup.py by typing:
 
 ```bash
 python setup.py develop
@@ -13,7 +13,7 @@ python setup.py develop
 Note: This should also be possible when running `make setup_package` 
 ![alt text](images/setup.png)
 
-By doing so, we can now run the project as an executable via `etl_query`
+Now we can run the project as an executable with `etl_query`
 
 ## Usage
 
@@ -25,13 +25,13 @@ To run the ETL-Query script, use the following command:
 etl_query <action> 
 ```
 
-### Available Actions
+### Actions
 
 The script supports the following actions:
 
 - `extract`: Extract data
 - `transform_load`: Transform and load data
-- `query`: Execute a general query
+- `query`: Execute a query
 
 ## Examples
 
@@ -66,4 +66,8 @@ Replace `<query>` with the specific query you want to execute.
 
 ## Notes
 
-- Ensure that you have the required dependencies installed before running the script.
+- Ensure that you have the required dependencies installed before running the script, this can be done with `make install`.
+- All of these actions can also be done running:
+* `make extract`
+* `make transform_load` 
+* `make query` - though this has a query already input, so to run your own query, `etl_query query <query>` is recommended. 
