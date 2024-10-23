@@ -23,7 +23,7 @@ This project creates an ETL-Query pipeline utilizing a cloud service like Databr
 2. Load repo to code spaces
 3. Wait for installation of all requirements in requirements.txt
 4. Make your own .env file to store your Databricks' secrets as it requires a connection to be established to Databricks
-3. Run main.py to load in database and run queries
+3. See user_guide.md on how to setup and run command line tools
 
 ## Check format and test errors
 1. Format code `make format`

@@ -11,6 +11,7 @@ To access the cli command tool you would need to run setup.py by typing:
 python setup.py develop
 ```
 Note: This should also be possible when running `make setup_package` 
+![alt text](images/setup.png)
 
 By doing so, we can now run the project as an executable via `etl_query`
 
@@ -40,6 +41,8 @@ The script supports the following actions:
 etl_query extract
 ```
 
+![alt text](images/extract.png)
+
 This command will extract data.
 
 ### Transform and Load Data
@@ -47,6 +50,7 @@ This command will extract data.
 ```bash
 etl_query transform_load
 ```
+![alt text](images/transform.png)
 
 This command will transform and load data.
 
@@ -57,6 +61,8 @@ etl_query query <query>
 ```
 
 Replace `<query>` with the specific query you want to execute.
+
+![alt text](images/query.png)
 
 ## Notes
 
